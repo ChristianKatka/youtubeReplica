@@ -1,0 +1,61 @@
+<mat-toolbar color="primary">
+    <div>
+        <button mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div fxLayoutAlign="center"><img src="../../assets/img/youtubelogo.jpg" alt="logo" class="logo"></div>
+
+
+
+    <!-- search bar -->
+    <div class="search" fxLayoutAlign="center center" style="background-color: green;">
+        <form>
+            <input type="text" style="flex-grow: 1; margin: 0px 0px 0px 50px;">
+            <button style="margin: 0 50px 0 0">asd</button>
+        </form>
+
+
+        <!-- <form fxFlex="33">
+            <input class="search-input" type="text" placeholder="Search.." name="search">
+                <button mat-icon-button>
+                    <mat-icon class="search-icon">search</mat-icon>
+                </button>
+        </form> -->
+        <!-- <form class="search-form">
+            <input class="search-input" type="text" name="search" placeholder="Search this site" >
+            <button type="submit" class="search-btn">Search</button>
+            <button mat-icon-button>
+                <mat-icon  class="search-btn">search</mat-icon>
+            </button>
+            <button mat-icon-button><mat-icon>search</mat-icon></button>
+        </form> -->
+
+    </div>
+
+    <!-- making container flex and pushing elements to the right -->
+    <div fxLayout="row" fxLayoutAlign="flex-end">
+        <ul fxLayout="row" fxLayoutGap="10px" class="navigation-items">
+            <li>
+                <button mat-icon-button matTooltip="Add video or create post">
+                    <mat-icon>switch_video</mat-icon>
+                </button>
+            </li>
+            <li>
+                <button mat-icon-button matTooltip="Youtube-apps">
+                    <mat-icon>apps</mat-icon>
+                </button>
+            </li>
+            <li>
+                <button mat-icon-button matTooltip="Notifications">
+                    <mat-icon>notification_important</mat-icon>
+                </button>
+            </li>
+            <li>
+                <button mat-icon-button>
+                    <mat-icon>settings</mat-icon>
+                </button>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>

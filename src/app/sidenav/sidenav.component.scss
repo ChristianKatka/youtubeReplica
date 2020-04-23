@@ -1,0 +1,22 @@
+.side-nav {
+    background-color: rgb(54, 54, 54);
+}
+
+.side-nav a {
+  color: rgb(238, 238, 238);
+  font-size: 13px;
+}
+
+.mat-divider {
+    border-top-color: rgb(148, 148, 148);
+}
+
+.newness-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgb(15, 139, 255);
+    margin: 0 6px;
+    // Push dot to the right side and keep it aligned with all accounts
+    margin-left: auto;
+}
