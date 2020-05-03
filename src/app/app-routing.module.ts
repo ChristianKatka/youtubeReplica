@@ -7,7 +7,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'sidenav', component: SidenavComponent },
-  { path: '', redirectTo: 'sidenav', pathMatch: 'full' }
+  { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -1,12 +1,14 @@
-// a {
-//     text-decoration: none;
-//     color: white;
-// }
-  
-// a:hover {
-//     color: gray;
-// }
-  
+
+// Main navigation bar at the top
+.mat-toolbar {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
 .navigation-items {
     list-style: none;
     padding: 0;
