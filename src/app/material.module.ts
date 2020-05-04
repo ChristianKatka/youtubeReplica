@@ -9,7 +9,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-
+import { MatSidenavModule } from '@angular/material/sidenav';
+// Delete this card
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
     imports: [
@@ -19,7 +21,9 @@ import { MatListModule } from '@angular/material/list';
         MatTooltipModule,
         MatFormFieldModule,
         MatInputModule,
-        MatListModule
+        MatListModule,
+        MatSidenavModule,
+        MatCardModule
     ],
 
     //so we can use it outside of this component
@@ -30,7 +34,9 @@ import { MatListModule } from '@angular/material/list';
         MatTooltipModule,
         MatFormFieldModule,
         MatInputModule,
-        MatListModule
+        MatListModule,
+        MatSidenavModule,
+        MatCardModule
     ]
 })
 

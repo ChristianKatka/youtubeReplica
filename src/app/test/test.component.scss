@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+.sidenav a {
+    color: rgb(241, 241, 241);
+    font-size: 13px;
+  }
+
+
+// SCROLLBAR ------
+.sidenav {
+    position: fixed;
+    background-color: rgb(54, 54, 54);
+    // matches the height of the viewport AKA users screen size
+    height: 100vh;
+    width: 250px;
+    // Add 50px to the top because position fixed will overlap with top navbar
+    padding-top: 60px;
+}
+
+
+
+
+
+//  CARD
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }

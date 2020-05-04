@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { TestComponent } from './test/test.component';
 
 
 
@@ -19,7 +20,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
