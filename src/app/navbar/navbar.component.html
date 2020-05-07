@@ -8,13 +8,18 @@
 
 
 
-    <!-- search bar -->
-    <div class="search" fxLayoutAlign="center center" style="background-color: green;">
-        <form>
-            <input type="text" style="flex-grow: 1; margin: 0px 0px 0px 50px;">
-            <button style="margin: 0 50px 0 0">asd</button>
-        </form>
 
+    <!-- search bar -->
+    <div class="search" fxLayoutAlign="center center">
+
+        <p>
+            <mat-form-field appearance="standard" class="material-inputfield">
+                <!-- Fix input color grey to white -->
+              <input matInput placeholder="">
+              <mat-icon matSuffix>keyboard</mat-icon>
+            </mat-form-field>
+            <button mat-icon-button><mat-icon>search</mat-icon></button>
+          </p>
 
         <!-- <form fxFlex="33">
             <input class="search-input" type="text" placeholder="Search.." name="search">

@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { TestComponent } from './test/test.component';
+import { Test2Component } from './test2/test2.component';
 
 
 
@@ -21,7 +22,8 @@ import { TestComponent } from './test/test.component';
     HomeComponent,
     NavbarComponent,
     SidenavComponent,
-    TestComponent
+    TestComponent,
+    Test2Component
   ],
   imports: [
     BrowserModule,
