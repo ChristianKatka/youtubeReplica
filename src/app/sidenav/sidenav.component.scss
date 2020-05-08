@@ -1,18 +1,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
+.sidenav a {
+    color: rgb(241, 241, 241);
+    font-size: 13px;
+  }
 
 
-
-.side-nav a {
-  color: rgb(241, 241, 241);
-  font-size: 13px;
+// SCROLLBAR ------
+.sidenav {
+    position: fixed;
+    background-color: rgb(54, 54, 54);
+    // matches the height of the viewport AKA users screen size
+    height: 100vh;
+    width: 250px;
+    // Add 50px to the top because position fixed will overlap with top navbar
+    padding-top: 60px;
 }
 
-// break line
-.mat-divider {
-    border-top-color: rgb(148, 148, 148);
+.bottom-info a{
+    color: rgb(189, 189, 189);
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
 }
+
 // blue dot next to user name
 .newness-dot {
     width: 4px;
@@ -22,42 +33,4 @@
     // Push dot to the right side and keep it aligned with all accounts
     margin-left: auto;
     margin-right: 10px;
-}
-
-.bottom-info a{
-    color: rgb(189, 189, 189);
-    cursor: pointer;
-    font-family: 'Roboto Slab', serif;
-}
-
-// SCROLLBAR ------
-
-// hide scrollbar until hover
-.side-nav:hover {
-    overflow-y: scroll;
-}
-
-.side-nav {
-    background-color: rgb(54, 54, 54);
-    // matches the height of the viewport AKA users screen size
-    height: 100vh;
-    overflow: hidden;
-}
-// scrollbar background
-.side-nav::-webkit-scrollbar-track
-{
-    background-color: rgb(54, 54, 54);
-}
-
-// size of the side scrollbar
-.side-nav::-webkit-scrollbar
-{
-    width: 10px;
-}
-
-// the scrollbar itself
-.side-nav::-webkit-scrollbar-thumb
-{
-    // border-radius: 10px;
-    background-color: rgb(98, 98, 98);
 }

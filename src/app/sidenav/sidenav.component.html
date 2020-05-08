@@ -1,25 +1,135 @@
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer mode="side" opened>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" opened class="sidenav">
 
-        <ul>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-        </ul>
+        <mat-nav-list>
+            <!-- First section Home-->
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">home</mat-icon>
+                <span class="nav-caption">Home</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">fireplace</mat-icon>
+                <span class="nav-caption">Trending</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">subscriptions</mat-icon>
+                <span class="nav-caption">Subscriptions</span>
+            </a>
+            <mat-divider class="my-2"></mat-divider>
+            <!-- Second section Library-->
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">library_books</mat-icon>
+                <span class="nav-caption">Library</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">history</mat-icon>
+                <span class="nav-caption">History</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">vertical_split</mat-icon>
+                <span class="nav-caption">My videos</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">watch_later</mat-icon>
+                <span class="nav-caption">Watch later</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">thumb_up</mat-icon>
+                <span class="nav-caption">Liked videos</span>
+            </a>
+            <mat-divider class="my-2"></mat-divider>
+            <!-- Third section Subscriptions -->
+            <h4 class="ml-4" style="color: rgb(179, 179, 179);">Subscriptions</h4>
+            <a mat-list-item routerLink=''>
+                <img class="ml-2 mr-3" src="../../assets/img/avatar.png" alt="Avatar"
+                    style="border-radius: 50%; width:30px;">
+                <span class="nav-caption">John Doe</span>
+                <div class="newness-dot"></div>
+            </a>
+            <a mat-list-item routerLink=''>
+                <img class="ml-2 mr-3" src="../../assets/img/avatar.png" alt="Avatar"
+                    style="border-radius: 50%; width:30px;">
+                <span class="nav-caption">Lorem ipsum</span>
+                <div class="newness-dot"></div>
+            </a>
+            <a mat-list-item routerLink=''>
+                <img class="ml-2 mr-3" src="../../assets/img/avatar.png" alt="Avatar"
+                    style="border-radius: 50%; width:30px;">
+                <span class="nav-caption">Lorem</span>
+                <div class="newness-dot"></div>
+            </a>
+            <mat-divider class="my-2"></mat-divider>
+            <!-- Fourth section More from youtube-->
+            <h4 class="ml-4" style="color: rgb(179, 179, 179);">More from youtube</h4>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">polymer</mat-icon>
+                <span class="nav-caption">YouTube Premium</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">movie</mat-icon>
+                <span class="nav-caption">YouTube-movies</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">games</mat-icon>
+                <span class="nav-caption">Games</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">live_tv</mat-icon>
+                <span class="nav-caption">live</span>
+            </a>
+            <mat-divider class="my-2"></mat-divider>
+            <!-- Fifth section Settings-->
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">settings</mat-icon>
+                <span class="nav-caption">Settings</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">flag</mat-icon>
+                <span class="nav-caption">Notification history</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">contact_support</mat-icon>
+                <span class="nav-caption">Instructions</span>
+            </a>
+            <a mat-list-item routerLink=''>
+                <mat-icon class="ml-2 mr-3">poll</mat-icon>
+                <span class="nav-caption">Send feedback</span>
+            </a>
+            <mat-divider class="my-2"></mat-divider>
+            <!-- Sixth section Info-->
+            <div class="m-4 bottom-info">
+                <a class="mr-2">Tietoja</a>
+                <a>Lehdistö</a>
+                <br>
+                <a class="mr-2">Tekijänoikeudet</a>
+                <a>Ota yhteyttä</a>
+                <br>
+                <a class="mr-2">Sisällöntuottajat</a>
+                <a>Mainosta</a>
+                <br>
+                <a>Kehittäjät</a>
+                <br>
+                <br>
+                <a class="mr-2">Ehdot</a>
+                <a>Tietosuoja</a>
+                <br>
+                <a>Käytännöt ja turvallisuus</a>
+                <br>
+                <a>Kokeile uusia ominaisuuksia</a>
+                <div class="mt-4 copy-right" style="color: rgb(104, 104, 104)">&copy; 2020 Google LLC</div>
+            </div>
+        </mat-nav-list>
 
 
 
 
 
-    </mat-drawer>
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+        <!-- Show content  -->
+        <router-outlet></router-outlet>
 
 
-
-
-
-    <mat-drawer-content>Main content
-        
-     
-        
-    </mat-drawer-content>
-</mat-drawer-container>
+    </mat-sidenav-content>
+</mat-sidenav-container>

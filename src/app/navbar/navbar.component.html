@@ -15,11 +15,13 @@
         <p>
             <mat-form-field appearance="standard" class="material-inputfield">
                 <!-- Fix input color grey to white -->
-              <input matInput placeholder="">
-              <mat-icon matSuffix>keyboard</mat-icon>
+                <input matInput placeholder="">
+                <mat-icon matSuffix>keyboard</mat-icon>
             </mat-form-field>
-            <button mat-icon-button><mat-icon>search</mat-icon></button>
-          </p>
+            <button mat-icon-button>
+                <mat-icon>search</mat-icon>
+            </button>
+        </p>
 
         <!-- <form fxFlex="33">
             <input class="search-input" type="text" placeholder="Search.." name="search">
@@ -57,9 +59,10 @@
                 </button>
             </li>
             <li>
-                <button mat-icon-button>
-                    <mat-icon>settings</mat-icon>
-                </button>
+                <a mat-list-item routerLink=''>
+                    <img class="ml-2 mr-3" src="../../assets/img/avatar.png" alt="Avatar"
+                        style="border-radius: 50%; width:30px;">
+                </a>
             </li>
         </ul>
     </div>
